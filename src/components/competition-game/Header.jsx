@@ -14,19 +14,25 @@ class Header extends Component {
             </Link>
           </h4>
           {isUserLoggedIn && (
-            <Link className="btn btn-sm btn-secondary" to="/challenge">
-              SOLVE
-            </Link>
+            <div class="col-md-auto">
+              <Link className="btn btn-success btn-sm" to="/challenge">
+                SOLVE
+              </Link>
+            </div>
           )}
           {isUserLoggedIn && (
-            <Link className="btn btn-sm btn-secondary" to="/topplayer">
-              TOP 3
-            </Link>
+            <div class="col-md-auto">
+              <Link className="btn btn-success btn-sm" to="/topplayer">
+                TOP 3
+              </Link>
+            </div>
           )}
           {isUserLoggedIn && (
-            <Link className="btn btn-sm btn-secondary" to="/logout" onClick={ChallengeAPI.logout}>
-              Logout
-            </Link>
+            <div class="col-md-auto">
+              <Link className="btn btn-success btn-sm" to="/logout" onClick={ChallengeAPI.logout}>
+                Logout
+              </Link>
+            </div>
           )}
         </div>
       </header>
