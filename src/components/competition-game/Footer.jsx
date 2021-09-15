@@ -7,7 +7,7 @@ class Footer extends Component {
         <p className="m-0">
           Copyright &copy; 2020{" "}
           <a href="/" className="text-muted">
-            Cognizant Challenge
+            Genpact Challenge
           </a>
           . All rights reserved.
         </p>
